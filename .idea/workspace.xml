@@ -22,11 +22,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9640fd-f352-4199-96a6-f36793429829" name="Default Changelist" comment="" />
+    <list default="true" id="db9640fd-f352-4199-96a6-f36793429829" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/MsgConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/MsgPubulish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/dto/RabbitConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/utils/RabbitUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productor/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +49,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../idea/apache-maven-3.6.1" />
+        <option name="mavenHome" value="D:\idea\apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\idea\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -75,7 +90,33 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaApplication">
+  <component name="RunManager" selected="Application.MsgPubulish">
+    <configuration name="MsgConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.MsgConsumer" />
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangc.consumer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsgPubulish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.productor.controller.MsgPubulish" />
+      <module name="productor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangc.productor.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -108,6 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MsgPubulish" />
+        <item itemvalue="Application.MsgConsumer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,6 +171,8 @@
       <workItem from="1606495509190" duration="479000" />
       <workItem from="1606496012424" duration="218000" />
       <workItem from="1606496266659" duration="5036000" />
+      <workItem from="1606543129503" duration="476000" />
+      <workItem from="1606652086727" duration="4728000" />
     </task>
     <servers />
   </component>
@@ -140,6 +189,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1606497456906">
@@ -150,6 +200,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="94" y="354" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606500263651" />
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1606660043114">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606660043114" />
     <state x="369" y="501" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606498579175">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -166,58 +220,58 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="420" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1606498692708" />
-    <state width="1888" height="399" key="GridCell.Tab.0.bottom" timestamp="1606502422014">
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom" timestamp="1606655707014">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.0.center" timestamp="1606502422014">
+    <state width="1234" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707014" />
+    <state width="1234" height="398" key="GridCell.Tab.0.center" timestamp="1606655707014">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.0.left" timestamp="1606502422014">
+    <state width="1234" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707014" />
+    <state width="1234" height="398" key="GridCell.Tab.0.left" timestamp="1606655707013">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.0.right" timestamp="1606502422014">
+    <state width="1234" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707013" />
+    <state width="1234" height="398" key="GridCell.Tab.0.right" timestamp="1606655707014">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.1.bottom" timestamp="1606502422014">
+    <state width="1234" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707014" />
+    <state width="1888" height="399" key="GridCell.Tab.1.bottom" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.1.center" timestamp="1606502422014">
+    <state width="1888" height="399" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="1888" height="399" key="GridCell.Tab.1.center" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.1.left" timestamp="1606502422014">
+    <state width="1888" height="399" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="1888" height="399" key="GridCell.Tab.1.left" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.1.right" timestamp="1606502422014">
+    <state width="1888" height="399" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="1888" height="399" key="GridCell.Tab.1.right" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.2.bottom" timestamp="1606502422014">
+    <state width="1888" height="399" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="1888" height="399" key="GridCell.Tab.2.bottom" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.2.center" timestamp="1606502422014">
+    <state width="1888" height="399" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="1888" height="399" key="GridCell.Tab.2.center" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.2.left" timestamp="1606502422014">
+    <state width="1888" height="399" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="1888" height="399" key="GridCell.Tab.2.left" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state width="1888" height="399" key="GridCell.Tab.2.right" timestamp="1606502422014">
+    <state width="1888" height="399" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="1888" height="399" key="GridCell.Tab.2.right" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422014" />
-    <state x="220" y="434" key="IDE.errors.dialog" timestamp="1606498148699">
+    <state width="1888" height="399" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state x="220" y="434" key="IDE.errors.dialog" timestamp="1606543603827">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="220" y="434" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606498148699" />
+    <state x="220" y="434" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606543603827" />
     <state x="141" y="347" key="SettingsEditor" timestamp="1606498942587">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
