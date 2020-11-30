@@ -22,14 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9640fd-f352-4199-96a6-f36793429829" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/MsgConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/MsgPubulish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/dto/RabbitConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/utils/RabbitUtils.java" afterDir="false" />
+    <list default="true" id="db9640fd-f352-4199-96a6-f36793429829" name="Default Changelist" comment="rabbitMQ 简单工作模式demo">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/workQueue/WorkQueueComsumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/workQueue/WorkQueueComsumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/workQueue/WorkQueueComsumer3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/workQueue/WorkQueuePublish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/dto/SMS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/MsgConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/MsgConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/MsgPubulish.java" beforeDir="false" afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/MsgPubulish.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/productor/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/productor/src/main/java" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -79,6 +81,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangc.consumer.controller.workQueue" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\spring-cloud\productor\src\main\java" />
     </key>
@@ -90,26 +95,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MsgPubulish">
-    <configuration name="MsgConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.MsgConsumer" />
-      <module name="consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangc.consumer.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WorkQueuePublish">
     <configuration name="MsgPubulish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wangc.productor.controller.MsgPubulish" />
       <module name="productor" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangc.productor.controller.*" />
+          <option name="PATTERN" value="com.wangc.productor.controller.workQueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,13 +109,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="WorkQueueComsumer1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.workQueue.WorkQueueComsumer1" />
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangc.consumer.controller.workQueue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkQueueComsumer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.workQueue.WorkQueueComsumer2" />
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangc.consumer.controller.workQueue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkQueueComsumer3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.workQueue.WorkQueueComsumer3" />
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangc.consumer.controller.workQueue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkQueuePublish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.productor.controller.workQueue.WorkQueuePublish" />
+      <module name="productor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangc.productor.controller.workQueue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,8 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WorkQueuePublish" />
+        <item itemvalue="Application.WorkQueueComsumer3" />
+        <item itemvalue="Application.WorkQueueComsumer2" />
+        <item itemvalue="Application.WorkQueueComsumer1" />
         <item itemvalue="Application.MsgPubulish" />
-        <item itemvalue="Application.MsgConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -172,8 +221,17 @@
       <workItem from="1606496012424" duration="218000" />
       <workItem from="1606496266659" duration="5036000" />
       <workItem from="1606543129503" duration="476000" />
-      <workItem from="1606652086727" duration="4728000" />
+      <workItem from="1606652086727" duration="4905000" />
+      <workItem from="1606748657542" duration="3765000" />
     </task>
+    <task id="LOCAL-00001" summary="rabbitMQ 简单工作模式demo">
+      <created>1606660185802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606660185802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +249,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rabbitMQ 简单工作模式demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="rabbitMQ 简单工作模式demo" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="760" y="274" key="#Project_Structure" timestamp="1606497456906">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -200,10 +262,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="94" y="354" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606500263651" />
-    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1606660043114">
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1606750411336">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606660043114" />
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606750411336" />
     <state x="369" y="501" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606498579175">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -220,38 +282,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="420" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1606498692708" />
-    <state width="1234" height="398" key="GridCell.Tab.0.bottom" timestamp="1606655707014">
+    <state width="2517" height="761" key="GridCell.Tab.0.bottom" timestamp="1606752822772">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707014" />
-    <state width="1234" height="398" key="GridCell.Tab.0.center" timestamp="1606655707014">
+    <state width="2517" height="761" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606752822772" />
+    <state width="2517" height="761" key="GridCell.Tab.0.center" timestamp="1606752822772">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707014" />
-    <state width="1234" height="398" key="GridCell.Tab.0.left" timestamp="1606655707013">
+    <state width="2517" height="761" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606752822772" />
+    <state width="2517" height="761" key="GridCell.Tab.0.left" timestamp="1606752822772">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707013" />
-    <state width="1234" height="398" key="GridCell.Tab.0.right" timestamp="1606655707014">
+    <state width="2517" height="761" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606752822772" />
+    <state width="2517" height="761" key="GridCell.Tab.0.right" timestamp="1606752822772">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1234" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606655707014" />
-    <state width="1888" height="399" key="GridCell.Tab.1.bottom" timestamp="1606543612192">
+    <state width="2517" height="761" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606752822772" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1606750032300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
-    <state width="1888" height="399" key="GridCell.Tab.1.center" timestamp="1606543612192">
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606750032300" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1606750032300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
-    <state width="1888" height="399" key="GridCell.Tab.1.left" timestamp="1606543612192">
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606750032300" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1606750032300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
-    <state width="1888" height="399" key="GridCell.Tab.1.right" timestamp="1606543612192">
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606750032300" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1606750032300">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1888" height="399" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606543612192" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606750032300" />
     <state width="1888" height="399" key="GridCell.Tab.2.bottom" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -276,6 +338,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="141" y="347" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1606498942587" />
+    <state x="872" y="419" key="Vcs.Push.Dialog.v2" timestamp="1606660188778">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="419" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606660188778" />
     <state x="1079" y="477" key="chooseDestDirectoryDialog" timestamp="1606497591254">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -288,6 +354,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="977" y="666" width="1251" height="567" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1606499060315" />
+    <state x="936" y="330" key="run.anything.popup" timestamp="1606750575934">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1606750575934" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
