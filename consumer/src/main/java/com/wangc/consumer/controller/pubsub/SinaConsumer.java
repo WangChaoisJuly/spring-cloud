@@ -1,8 +1,8 @@
 package com.wangc.consumer.controller.pubsub;
 
 import com.rabbitmq.client.*;
-import com.wangc.productor.dto.RabbitConstant;
-import com.wangc.productor.utils.RabbitUtils;
+import com.wangc.consumer.dto.RabbitConstant;
+import com.wangc.consumer.utils.RabbitUtils;
 
 import java.io.IOException;
 

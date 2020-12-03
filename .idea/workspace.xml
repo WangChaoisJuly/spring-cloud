@@ -23,13 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db9640fd-f352-4199-96a6-f36793429829" name="Default Changelist" comment="rabbitMQ 简单工作模式demo">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/route/BaiduConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/route/SinaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/topic/BaiduConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/topic/SinaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/route/RouteProductor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/topic/TopicProductor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/dto/RabbitConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/dto/SMS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/utils/RabbitUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/pubsub/SinaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/pubsub/SinaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productor/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/productor/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/productor/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -81,13 +81,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangc.consumer.utils" />
       <recent name="com.wangc.consumer.controller.topic" />
       <recent name="com.wangc.productor.controller.topic" />
       <recent name="com.wangc.consumer.controller.route" />
       <recent name="com.wangc.consumer.controller.pubsub" />
-      <recent name="com.wangc.consumer.controller.workQueue" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\spring-cloud\consumer\src\main\java\com\wangc\consumer" />
       <recent name="D:\Projects\spring-cloud\productor\src\main\java" />
     </key>
   </component>
@@ -98,13 +99,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TopicProductor">
-    <configuration name="BaiduConsumer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.route.BaiduConsumer" />
+  <component name="RunManager" selected="Application.PubSubProductor">
+    <configuration name="BaiduConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.topic.BaiduConsumer" />
       <module name="consumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangc.consumer.controller.route.*" />
+          <option name="PATTERN" value="com.wangc.consumer.controller.topic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaiduConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.topic.BaiduConsumer" />
-      <module name="consumer" />
+    <configuration name="PubSubProductor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.productor.controller.pubsub.PubSubProductor" />
+      <module name="productor" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangc.consumer.controller.topic.*" />
+          <option name="PATTERN" value="com.wangc.productor.controller.pubsub.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,17 +165,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangc.consumer.ConsumerApplication" />
@@ -198,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PubSubProductor" />
         <item itemvalue="Application.TopicProductor" />
         <item itemvalue="Application.BaiduConsumer" />
         <item itemvalue="Application.SinaConsumer (2)" />
         <item itemvalue="Application.RouteProductor" />
-        <item itemvalue="Application.BaiduConsumer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -225,6 +215,8 @@
       <workItem from="1606652086727" duration="4905000" />
       <workItem from="1606748657542" duration="6866000" />
       <workItem from="1606834171687" duration="2599000" />
+      <workItem from="1606911500994" duration="2151000" />
+      <workItem from="1607009806491" duration="271000" />
     </task>
     <task id="LOCAL-00001" summary="rabbitMQ 简单工作模式demo">
       <created>1606660185802</created>
@@ -295,22 +287,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="420" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1606498692708" />
-    <state width="2517" height="411" key="GridCell.Tab.0.bottom" timestamp="1606837809049">
+    <state width="2517" height="245" key="GridCell.Tab.0.bottom" timestamp="1606927340789">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="411" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606837809049" />
-    <state width="2517" height="411" key="GridCell.Tab.0.center" timestamp="1606837809049">
+    <state width="2517" height="245" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
+    <state width="2517" height="245" key="GridCell.Tab.0.center" timestamp="1606927340789">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="411" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606837809049" />
-    <state width="2517" height="411" key="GridCell.Tab.0.left" timestamp="1606837809049">
+    <state width="2517" height="245" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
+    <state width="2517" height="245" key="GridCell.Tab.0.left" timestamp="1606927340789">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="411" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606837809049" />
-    <state width="2517" height="411" key="GridCell.Tab.0.right" timestamp="1606837809049">
+    <state width="2517" height="245" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
+    <state width="2517" height="245" key="GridCell.Tab.0.right" timestamp="1606927340789">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="411" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606837809049" />
+    <state width="2517" height="245" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1606755957771">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -367,10 +359,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="977" y="666" width="1251" height="567" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1606499060315" />
-    <state x="936" y="330" key="run.anything.popup" timestamp="1606750575934">
+    <state x="936" y="330" key="run.anything.popup" timestamp="1606923041398">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1606750575934" />
+    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1606923041398" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -379,6 +371,11 @@
           <url>file://$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/TestController.java</url>
           <line>15</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/pubsub/PubSubProductor.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
