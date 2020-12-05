@@ -23,18 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db9640fd-f352-4199-96a6-f36793429829" name="Default Changelist" comment="rabbitMQ 简单工作模式demo">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/dto/RabbitConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/dto/SMS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/utils/RabbitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/wangc/common/CommonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/wangc/common/JVM/Math.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/wangc/common/JVM/MyClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/wangc/common/JVM/TestDynamicLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/wangc/common/JVM/TestJDKClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/wangc/common/JVM/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/wangc/common/JVM/User1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/test/java/com/wangc/common/CommonApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/pubsub/SinaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/controller/pubsub/SinaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/dto/RabbitConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/wangc/consumer/dto/SMS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,16 +75,21 @@
     </option>
   </component>
   <component name="ProjectId" id="1ksVVW9NXHOEV3T4px9OEzCh11m" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowGit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -74,18 +99,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wangc.common.JVM" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangc.common.JVM" />
       <recent name="com.wangc.consumer.utils" />
       <recent name="com.wangc.consumer.controller.topic" />
       <recent name="com.wangc.productor.controller.topic" />
       <recent name="com.wangc.consumer.controller.route" />
-      <recent name="com.wangc.consumer.controller.pubsub" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\spring-cloud\consumer\src\main\java\com\wangc\consumer" />
@@ -99,13 +127,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PubSubProductor">
-    <configuration name="BaiduConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.topic.BaiduConsumer" />
-      <module name="consumer" />
+  <component name="RunManager" selected="Application.MyClassLoaderTest">
+    <configuration name="MyClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.common.JVM.MyClassLoaderTest" />
+      <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangc.consumer.controller.topic.*" />
+          <option name="PATTERN" value="com.wangc.common.JVM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RouteProductor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangc.productor.controller.route.RouteProductor" />
-      <module name="productor" />
+    <configuration name="TestDynamicLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.common.JVM.TestDynamicLoad" />
+      <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangc.productor.controller.route.*" />
+          <option name="PATTERN" value="com.wangc.common.JVM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinaConsumer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangc.consumer.controller.topic.SinaConsumer" />
-      <module name="consumer" />
+    <configuration name="TestJDKClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangc.common.JVM.TestJDKClassLoader" />
+      <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangc.consumer.controller.topic.*" />
+          <option name="PATTERN" value="com.wangc.common.JVM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,6 +189,24 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangc.common.CommonApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyClassLoaderTest" />
+        <item itemvalue="Application.TestJDKClassLoader" />
+        <item itemvalue="Application.TestDynamicLoad" />
         <item itemvalue="Application.PubSubProductor" />
         <item itemvalue="Application.TopicProductor" />
-        <item itemvalue="Application.BaiduConsumer" />
-        <item itemvalue="Application.SinaConsumer (2)" />
-        <item itemvalue="Application.RouteProductor" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +263,8 @@
       <workItem from="1606834171687" duration="2599000" />
       <workItem from="1606911500994" duration="2151000" />
       <workItem from="1607009806491" duration="271000" />
+      <workItem from="1607176176930" duration="44000" />
+      <workItem from="1607177527819" duration="5138000" />
     </task>
     <task id="LOCAL-00001" summary="rabbitMQ 简单工作模式demo">
       <created>1606660185802</created>
@@ -251,6 +299,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="rabbitMQ 简单工作模式demo" />
     <option name="LAST_COMMIT_MESSAGE" value="rabbitMQ 简单工作模式demo" />
   </component>
@@ -263,10 +312,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="94" y="354" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606500263651" />
-    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1606754121730">
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1607181792723">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606754121730" />
+    <state x="1085" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607181792723" />
     <state x="369" y="501" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606498579175">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -275,50 +324,54 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1085" y="622" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606497775586" />
-    <state width="609" height="466" key="DebuggerActiveHint" timestamp="1606755359031">
+    <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607181171839">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="609" height="466" key="DebuggerActiveHint/0.0.2560.1400@0.0.2560.1400" timestamp="1606755359031" />
+    <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607181171839" />
+    <state width="609" height="466" key="DebuggerActiveHint" timestamp="1607182679471">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="609" height="466" key="DebuggerActiveHint/0.0.2560.1400@0.0.2560.1400" timestamp="1607182679471" />
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1606502422256">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606502422256" />
-    <state x="420" y="457" key="FileChooserDialogImpl" timestamp="1606498692708">
+    <state x="420" y="457" key="FileChooserDialogImpl" timestamp="1607176210555">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="420" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1606498692708" />
-    <state width="2517" height="245" key="GridCell.Tab.0.bottom" timestamp="1606927340789">
+    <state x="420" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1607176210555" />
+    <state width="2517" height="492" key="GridCell.Tab.0.bottom" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="245" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
-    <state width="2517" height="245" key="GridCell.Tab.0.center" timestamp="1606927340789">
+    <state width="2517" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
+    <state width="2517" height="492" key="GridCell.Tab.0.center" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="245" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
-    <state width="2517" height="245" key="GridCell.Tab.0.left" timestamp="1606927340789">
+    <state width="2517" height="492" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
+    <state width="2517" height="492" key="GridCell.Tab.0.left" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="245" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
-    <state width="2517" height="245" key="GridCell.Tab.0.right" timestamp="1606927340789">
+    <state width="2517" height="492" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
+    <state width="2517" height="492" key="GridCell.Tab.0.right" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="245" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606927340789" />
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1606755957771">
+    <state width="2517" height="492" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606755957771" />
-    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1606755957771">
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606755957771" />
-    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1606755957769">
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606755957769" />
-    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1606755957771">
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1607182696400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606755957771" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607182696400" />
     <state width="1888" height="399" key="GridCell.Tab.2.bottom" timestamp="1606543612192">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -339,10 +392,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="220" y="434" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606543603827" />
-    <state x="141" y="347" key="SettingsEditor" timestamp="1606498942587">
+    <state x="862" y="375" key="SettingsEditor" timestamp="1607180421598">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="141" y="347" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1606498942587" />
+    <state x="862" y="375" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607180421598" />
     <state x="872" y="419" key="Vcs.Push.Dialog.v2" timestamp="1606755756548">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -355,10 +408,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1083" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606502405291" />
-    <state x="977" y="666" width="1251" height="567" key="new project wizard" timestamp="1606499060315">
+    <state x="639" y="304" width="1251" height="679" key="new project wizard" timestamp="1607177744982">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="977" y="666" width="1251" height="567" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1606499060315" />
+    <state x="639" y="304" width="1251" height="679" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1607177744982" />
     <state x="936" y="330" key="run.anything.popup" timestamp="1606923041398">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -376,6 +429,11 @@
           <url>file://$PROJECT_DIR$/productor/src/main/java/com/wangc/productor/controller/pubsub/PubSubProductor.java</url>
           <line>11</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/wangc/common/JVM/MyClassLoaderTest.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
